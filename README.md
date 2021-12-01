@@ -46,6 +46,6 @@ Open the project in eclipse ide
 ## 7. Code Spring boot application class
 - **BookRestApplication.java**  
 -- Main application class - This class will start embedded Tomcat server hosting our Spring Boot web application on http://localhost:8080/books  
-33 8. Implement RESTful API for CRUD Operation 
+## 8. Implement RESTful API for CRUD Operation 
 on localhost://8080/books/{barcode}
 - **BookController.java**  
