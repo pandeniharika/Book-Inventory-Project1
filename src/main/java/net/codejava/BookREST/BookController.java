@@ -39,6 +39,7 @@ public class BookController {
 		return service.listAll();
 	}
 
+	
 	@GetMapping("/books/{barcode}")
 	public ResponseEntity<Book> get(@PathVariable Integer barcode) {
 		try {
@@ -50,18 +51,16 @@ public class BookController {
 		}
 
 	}
-
-	
 	@PostMapping(
 			consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
 			produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
 			path = "/books")
 	public void add(@RequestBody Book book) {
 		
-		service.save(book);
+		service.save(book); 
 	}
 
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	
 	@PutMapping("/books/{barcode}")
 	public ResponseEntity<?> update(@RequestBody Book book, @PathVariable Integer barcode) {
 	    try {
