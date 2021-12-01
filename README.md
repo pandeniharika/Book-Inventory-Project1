@@ -1,4 +1,4 @@
-# BookREST
+# BookREST - My Book Inventory - Backend
 REST API - SPRING BOOT JAVA - MYSQL
 ## 1. Create MySQL DB
 - **BookRestdb.csv**  
