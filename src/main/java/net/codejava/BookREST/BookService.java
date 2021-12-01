@@ -19,7 +19,7 @@ public class BookService {
 		repo.save(book);
 	}
 	public Book get(Integer id) {
-		return repo.getById(id);
+		return repo.findById(id).get();
 	}
 	public void delete(Integer id) {
 		repo.deleteById(id); 
